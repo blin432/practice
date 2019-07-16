@@ -10,7 +10,28 @@
  */
 
 function maxChar(str) {
+        let arr = str.split('');
+        let count = {};
+        let biggest = 0;
+        let value;
+      
+        arr.forEach(element => {
+          if (count[element]) {
+            count[element] = count[element] + 1;
+          } else {
+            count[element] = 1;
+          };
+        });
+      ////The for/in statement loops through the properties of an object.
 
+        for (let el in count) {
+          if (count[el] > biggest) {
+            biggest = count[el]
+            value = el;
+          }
+        }
+        return value
 }
+
 
 module.exports = maxChar;
