@@ -31,17 +31,3 @@ function fizzBuzz(n) {
 module.exports = fizzBuzz;
 
 
-function capitalize(string){
-    let arr = str.split('');
-    let newArr = []
-    arr.forEach(function(word){
-        word = word.split('');
-        word[0] = word[0].toUpperCase();
-        word = word.join('');
-        console.log(word)
-        newArr.push(word);
-    })
-    console.log(newArr)
-    newArr = newa.join('');
-    return newArr;
-}

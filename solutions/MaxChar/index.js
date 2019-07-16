@@ -38,6 +38,11 @@ function maxChar(str) {
   }
 
 
+  
+////The for/in statement loops through the properties of an object.
+
+
+
   for (let el in count) {
     if (count[el] > biggest) {
       biggest = count[el]
