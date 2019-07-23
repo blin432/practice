@@ -24,3 +24,4 @@ return longest;
 }
 
 module.exports = longestWord;
+/* */
