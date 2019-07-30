@@ -24,4 +24,15 @@ string.toLowerCase().split('').forEach(item =>{
 return count;
 }
 
+
+const vowels = (string) => {
+    const vovels = ['a', 'e', 'i', 'o', 'u'];
+    let count = 0;
+  
+    string.toLowerCase().split('').forEach(item => {
+      vovels.indexOf(item) !== -1 ? count += 1 : null;
+    });
+    return count;
+  }
+
 module.exports = vowels;
