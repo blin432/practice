@@ -31,3 +31,13 @@ function fizzBuzz(n) {
 module.exports = fizzBuzz;
 
 
+function fizzBuzz(n){
+    for (var i = 1;i<=n;i++){
+        if (i%3===0){
+            console.log()
+        } else if (i%5==0){
+            Console.log
+        }
+        else if (i%5==0 && i%3==0)
+    }
+}

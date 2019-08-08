@@ -26,3 +26,18 @@ function capitalize(str) {
 }
 
 module.exports = capitalize;
+
+
+function captialize(str){
+    let stringArray= str.split('');
+    let new Arry =[];
+    stringArray.forEach(word => {
+        word = word.split('');
+        word[0]=word[0].toUpperCase();
+        word= word.join('');
+        newArray.push(word);
+    })
+    newArray=newArray.join('');
+    return newArray;
+
+}

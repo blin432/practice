@@ -22,3 +22,14 @@ return b
 }
 
 module.exports = fib;
+function fib(n){
+    let a = 0;
+    let b = 1;
+    for (var i=1;i<n;i++){
+        const next=b
+        
+        b=a+b;
+        a=next
+    }
+    return b;
+}
