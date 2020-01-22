@@ -9,29 +9,24 @@
  * maxChar("apple 1231111") === "1"
  */
 
-function maxChar(str) {
-        let arr = str.split('');
-        let count = {};
-        let biggest = 0;
-        let value;
-      
-        arr.forEach(element => {
-          if (count[element]) {
-            count[element] = count[element] + 1;
-          } else {
-            count[element] = 1;
-          };
-        });
-      ////The for/in statement loops through the properties of an object.
 
-        for (let el in count) {
-          if (count[el] > biggest) {
-            biggest = count[el]
-            value = el;
-          }
-        }
-        return value
+
+function getMax(str){
+  strArray=str.split('');
+  max=0;
+  maxChar=''
+  strArray.toLowerCase.forEach(char=>{
+    if(strArray.split(char).length>max){
+      max=char
+      maxChar=strArray.length(char).length;
+    }
+  })
 }
 
 
+
+
 module.exports = maxChar;
+
+
+

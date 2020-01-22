@@ -16,6 +16,12 @@
  *              '#####'
  */
 
+
+
+
+
+
+ 
 function pyramid(n) {
     for (var i = 1; i<=n; i++){
         const arr=[];

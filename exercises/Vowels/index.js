@@ -9,30 +9,57 @@
  * vowels('Hello there!') === 4
  */
 
-function vowels(string) {
-const vowels = ['a', 'e', 'i', 'o', 'u'];
-let count = 0;
-string.toLowerCase().split('').forEach(item =>{
-    if (vowels.indexOf(item) !==-1)
-    {
-        count +=1
-    } else {
-        null
-    }
 
-})
-return count;
+
+function vowels(str){
+  var vowels=[a,e,i,o,u]
+  var count=0;
+  var stringArray=str.split('')
+  stringArray.toLowerCase.forEach(letter=>{
+    if (indexOf(letter) !==-1){
+      count=+1
+    }else{
+      null
+    }
+  })
+  return count
 }
 
 
-const vowels = (string) => {
-    const vovels = ['a', 'e', 'i', 'o', 'u'];
-    let count = 0;
-  
-    string.toLowerCase().split('').forEach(item => {
-      vovels.indexOf(item) !== -1 ? count += 1 : null;
-    });
-    return count;
-  }
+
 
 module.exports = vowels;
+
+
+
+//how to do a table join with javascript//
+const a1 = [{ id : 1, name : "test"}, { id : 2, name : "test2"}]
+const a2 = [{ id : 1, count : "1"}, {id : 2, count : "2"}]
+
+const merge = (arr1, arr2) => {
+  const temp = []
+
+  arr1.forEach(x => {
+    arr2.forEach(y => {
+      if (x.id === y.id) {
+        temp.push({ ...x, ...y })
+      }
+    })
+  })
+
+  return temp
+}
+
+console.log(merge(a1, a2))
+
+
+var newarray = [],
+    thing;
+
+for(var y = 0; y < rows.length; y++){
+    thing = {};
+    for(var i = 0; i < columns.length; i++){
+        thing[columns[i]] = rows[y][i];
+    }
+    newarray.push(thing)
+}

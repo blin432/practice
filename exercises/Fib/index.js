@@ -11,25 +11,18 @@
  * fib(15) === 610
  */
 
-function fib(n) {
-    let a = 0;
-    let b = 1;
-for (var i = 0; i<n+1;i++){
-    a=b
-    b=a+b;
-}
-return b
+
+function fib(n){
+    a=0;
+    b=1;
+    for (var i=1;i<n;i++){
+        let temp=b
+        b=b+a
+        a=temp
+    }
+    return b
+
 }
 
-module.exports = fib;
-function fib(n){
-    let a = 0;
-    let b = 1;
-    for (var i=1;i<n;i++){
-        const next=b
-        
-        b=a+b;
-        a=next
-    }
-    return b;
-}
+
+console.log(fib(2));

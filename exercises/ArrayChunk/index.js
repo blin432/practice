@@ -12,12 +12,20 @@
  * chunk([1, 2, 3, 4, 5], 10) === [[ 1, 2, 3, 4, 5]]
  */
 
+
+
 function chunk(array, size) {
-var newArr= [];
-for (let i = 0; i <array.length; i = i+size){
-    newArr.push(array.slice(i,i+size));
-}
-return newArr;
+    var newArray=[];
+    for (var i=0;i<array.length;i=i+size){
+        newArray.push(array.slice(i,i+size));
+    }
+    return newArray;
 }
 
 module.exports = chunk;
+
+
+
+
+
+

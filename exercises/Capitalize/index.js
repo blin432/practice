@@ -12,20 +12,48 @@
  */
 
 function capitalize(str) {
-    let stringArray= str.split('');
-    let newArray = []
-
-    stringArray.forEach(word =>{
-        word = word.split('');
-        word[0]=word[0].toUpperCase();
-        word = word.join('');
+    var stringArray= str.split('');
+    var newArray=[];
+    stringArray.forEach(word=>{
+        word=word.split('');
+        word[0]=word[0].toUpperCase;
+        word=word.join();
         newArray.push(word);
     })
-    newArray= newArray.join(' ');
+    newArray= newArray.join();
     return newArray;
 }
 
 module.exports = capitalize;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function captialize(str){
@@ -41,3 +69,25 @@ function captialize(str){
     return newArray;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+let stringArray= str.split('');
+    let newArray = []
+
+    stringArray.forEach(word =>{
+        word = word.split('');
+        word[0]=word[0].toUpperCase();
+        word = word.join('');
+        newArray.push(word);
+    })
+    newArray= newArray.join(' ');
+    return newArray;

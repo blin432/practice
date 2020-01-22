@@ -19,6 +19,14 @@
  *            '####'
  */
 
+
+
+
+
+
+
+
+ 
 function steps(n) {
 let word;
 for (let i=1; i<=n; i++){
